@@ -1,0 +1,104 @@
+Apr-29 19:13:28.264 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile test -resume
+Apr-29 19:13:28.336 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Apr-29 19:13:28.350 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/vngosb/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Apr-29 19:13:28.363 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-29 19:13:28.363 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-29 19:13:28.364 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-29 19:13:28.372 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Apr-29 19:13:28.436 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-29 19:13:28.449 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/vngosb/projects/germline_variant calling_pipeline /nextflow.config
+Apr-29 19:13:28.451 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/vngosb/projects/germline_variant calling_pipeline /nextflow.config
+Apr-29 19:13:28.463 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
+Apr-29 19:13:28.681 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [test]
+Apr-29 19:13:28.689 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-29 19:13:28.690 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-29 19:13:28.699 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/vngosb/.nextflow/secrets/store.json
+Apr-29 19:13:28.701 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@58a2b917] - activable => nextflow.secret.LocalSecretsProvider@58a2b917
+Apr-29 19:13:28.706 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-29 19:13:28.715 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [cheeky_einstein] DSL2 - revision: 42dc4a5936
+Apr-29 19:13:28.752 [main] DEBUG nextflow.Session - Session UUID: 493632a2-c48d-4e34-8bc7-2e4d7e310d5f
+Apr-29 19:13:28.752 [main] DEBUG nextflow.Session - Run name: cheeky_einstein
+Apr-29 19:13:28.752 [main] DEBUG nextflow.Session - Executor pool size: 10
+Apr-29 19:13:28.756 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-29 19:13:28.758 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Apr-29 19:13:28.773 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.4 build 11173
+  Created: 10-02-2026 15:17 UTC (07:17 PDT)
+  System: Mac OS X 26.4.1
+  Runtime: Groovy 4.0.28 on Java HotSpot(TM) 64-Bit Server VM 25.0.2+10-LTS-69
+  Encoding: UTF-8 (UTF-8)
+  Process: 63048@MacBook-Pro.local [127.0.0.1]
+  CPUs: 10 - Mem: 16 GB (84.9 MB) - Swap: 15 GB (1.6 GB)
+Apr-29 19:13:28.797 [main] DEBUG nextflow.Session - Work-dir: /Users/vngosb/projects/germline_variant calling_pipeline /work [Mac OS X]
+Apr-29 19:13:28.797 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/vngosb/projects/germline_variant calling_pipeline /bin
+Apr-29 19:13:28.802 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-29 19:13:28.806 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Apr-29 19:13:28.807 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Apr-29 19:13:28.822 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-29 19:13:28.827 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Apr-29 19:13:28.860 [main] DEBUG nextflow.Session - Session start
+Apr-29 19:13:29.009 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-29 19:13:29.280 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-29 19:13:29.280 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-29 19:13:29.285 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-29 19:13:29.288 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=16 GB; capacity=10; pollInterval=100ms; dumpInterval=5m
+Apr-29 19:13:29.289 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-29 19:13:29.300 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'FASTQC': maxForks=0; fair=false; array=0
+Apr-29 19:13:29.316 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-29 19:13:29.317 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-29 19:13:29.317 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'TRIM_GALORE': maxForks=0; fair=false; array=0
+Apr-29 19:13:29.321 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-29 19:13:29.322 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-29 19:13:29.322 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'BWA_MEM': maxForks=0; fair=false; array=0
+Apr-29 19:13:29.323 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-29 19:13:29.323 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-29 19:13:29.324 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'SAMTOOLS_SORT_INDEX': maxForks=0; fair=false; array=0
+Apr-29 19:13:29.326 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_6f655d7de2206d3c: /Users/vngosb/projects/germline_variant calling_pipeline /modules/haplotypecaller.nf
+  Script_667d8436f17c68d1: /Users/vngosb/projects/germline_variant calling_pipeline /modules/bwa_mem.nf
+  Script_79e5ab0f6add21a4: /Users/vngosb/projects/germline_variant calling_pipeline /modules/fastqc.nf
+  Script_88945c0f0ac68bec: /Users/vngosb/projects/germline_variant calling_pipeline /main.nf
+  Script_9dc9a1b63ead5aa0: /Users/vngosb/projects/germline_variant calling_pipeline /modules/trim_galore.nf
+  Script_54941d05d76f2249: /Users/vngosb/projects/germline_variant calling_pipeline /modules/samtools_sort_index.nf
+Apr-29 19:13:29.326 [main] DEBUG nextflow.Session - Session aborted -- Cause: Process `HAPLOTYPECALLER` declares 2 inputs but was called with 3 arguments
+Apr-29 19:13:29.333 [main] DEBUG nextflow.Session - The following nodes are still active:
+  [operator] view
+  [operator] collect
+  [operator] collect
+
+Apr-29 19:13:29.337 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Apr-29 19:13:29.396 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-29 19:13:29.510 [main] ERROR nextflow.cli.Launcher - Process `HAPLOTYPECALLER` declares 2 inputs but was called with 3 arguments
+nextflow.exception.ScriptRuntimeException: Process `HAPLOTYPECALLER` declares 2 inputs but was called with 3 arguments
+	at nextflow.script.ProcessDef.runV1(ProcessDef.groovy:161)
+	at nextflow.script.ProcessDef.run(ProcessDef.groovy:143)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.ComponentDef.invoke_o(ComponentDef.groovy:40)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:105)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_88945c0f0ac68bec$_runScript_closure2$_closure4.doCall(Script_88945c0f0ac68bec:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:249)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:260)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:429)
+	at nextflow.cli.Launcher.run(Launcher.groovy:515)
+	at nextflow.cli.Launcher.main(Launcher.groovy:675)
