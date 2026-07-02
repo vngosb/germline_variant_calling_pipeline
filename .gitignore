@@ -1,4 +1,5 @@
 # Nextflow
+.nextflow.log*
 .nextflow/
 work/
 
@@ -27,3 +28,4 @@ reference/
 
 # macOS
 .DS_Store
+
