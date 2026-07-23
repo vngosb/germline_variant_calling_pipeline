@@ -110,8 +110,8 @@ The workflow produces:
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Germline-Variant-Calling-Pipeline.git
-cd Germline-Variant-Calling-Pipeline
+git clone https://github.com/vngosb/germline-variant-calling-pipeline.git
+cd germline-variant-calling-pipeline
 ```
 
 Run the workflow:
